@@ -63,6 +63,11 @@ pub fn create_default_context(cwd: impl AsRef<Path>) -> EngineState {
             Use,
         };
 
+        // Filters
+        bind_command! {
+            Where,
+        };
+
         // Shells
         bind_command! {
             Exit,
